@@ -44,7 +44,7 @@ class Home extends React.Component {
             <div className="left-side">
               <span className="section-left-side-h1">Time to Clink it up</span>
               <p className="section-left-side-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam </p>
-              <button className="section-left-side-btn">Products</button>
+              <button className="section-left-side-btn" onClick={() => window.location.href = "/Products"} >Products</button>
             </div>
             <div className="right-side">
               <img className="img-responsive" src={main1} alt="" width="100%" />
@@ -57,7 +57,7 @@ class Home extends React.Component {
             <div className="right-side-new">
               <span className="section-left-side-h1">About <span className="font"> Clink</span></span>
               <p className="section-left-side-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus </p>
-              <button className="section-left-side-btn">Products</button>
+              <button className="section-left-side-btn" onClick={() => window.location.href = "/Products"} >Products</button>
             </div>
           </div>
         </div>

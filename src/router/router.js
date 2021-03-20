@@ -5,6 +5,7 @@ import AboutUs from '../components/AboutUs'
 import BlogPage from '../components/BlogPage'
 import BlogDetail from '../components/BlogDetail'
 import Products from '../components/Products'
+import CartPage from '../components/CartPage'
 import AddingToCart from '../components/AddingToCart'
 
 class ReactRouter extends React.Component {
@@ -12,6 +13,7 @@ class ReactRouter extends React.Component {
     return (
       <React.Fragment>
         <Route path="/Home" component={Home} />
+        <Route path="/CartPage" component={CartPage} />
         <Route exact path="/" component={Home} />
         <Route path="/BlogPage" component={BlogPage} />
         <Route path="/AboutUs" component={AboutUs} />

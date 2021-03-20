@@ -17,19 +17,19 @@ class OurProducts extends React.Component {
                 <div className="section-products" style={{ display: 'flex', justifyContent: "center", alignItems: 'center', flexDirection: 'column', width: '100%' }}>
                     <span className="section-products-h1" style={{ zIndex: 20, position: 'relative' }}>Our <span style={{ color: " #a10948" }}>Products</span></span>
                     <div className="css-grid">
-                        <div>
+                        <div style={{ width: "38rem" }}>
                             <img src={tec1} width='80%' alt="" />
                         </div>
-                        <div>
+                        <div style={{ width: "38rem" }}>
                             <img src={tec2} width='80%' alt="" />
                         </div>
-                        <div>
+                        <div style={{ width: "38rem" }}>
                             <img src={tec3} width='80%' alt="" />
                         </div>
-                        <div style={{ justifySelf: "center" }}>
+                        <div style={{ justifySelf: "center", width: '38rem' }}>
                             <img src={tec4} width='80%' alt="" />
                         </div>
-                        <div style={{ justifySelf: "center" }}>
+                        <div style={{ justifySelf: "center", width: '38rem' }}>
                             <img src={tec5} width='80%' alt="" />
                         </div>
                     </div>

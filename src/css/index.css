@@ -1,16 +1,20 @@
 :root {
     --maincolor: #a10948
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     display: none;
 }
-body{
+
+body {
     overflow-x: hidden;
 }
+
 html {
     margin: 0;
     padding: 0;
     font-size: 68.67%!important;
+    overflow-x: hidden;
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'); */
@@ -30,6 +34,9 @@ html {
     html {
         font-size: 37%!important;
     }
+    .left-side-nav{
+        height: 2px!important;
+    }
     .icon-nav {
         width: 20px;
         height: 20px;
@@ -46,6 +53,12 @@ html {
         min-width: 220px!important;
         width: 220px!important;
     }
+    .new-padding {
+        padding: 0px!important;
+    }
+    .detail-heading {
+        padding: 20px!important;
+    }
     /* .bgimg-1{
         display: none!important;
     } */
@@ -55,31 +68,46 @@ html {
     html {
         font-size: 27%!important;
     }
-    .left-side-top-side{
+    .left-side-top-side {
         flex-direction: column!important;
-    align-items: flex-start!important;
-    align-self: flex-start!important;
+        align-items: flex-start!important;
+        align-self: flex-start!important;
     }
-    .signup-menu{
+    .new-class-product {
+        flex-direction: column!important;
+        margin-top: 50px;
+        justify-content: flex-start!important;
+        align-items: center!important;
+    }
+    .slider-div {
+        background-color: transparent!important;
+        width: none!important;
+    }
+    .slick-list {
+        padding-left: 0px!important;
+    }
+    #root>div>div.products.new-padding>div.cart-left-side.w-100>div {
+        padding: 14px!important;
+    }
+    .signup-menu {
         width: 100%!important;
     }
-    .signup-p{
+    .signup-p {
         font-size: 10px!important;
     }
-    .signup-heading{
+    .signup-heading {
         font-size: 20px!important;
     }
-    .menu{
+    .menu {
         height: 100%!important;
         width: 100%!important;
     }
-    .alert-new{
+    .alert-new {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
         width: 100%!important;
         height: 100%!important;
-    
     }
     /* .bgimg-1{
 height: 100%!important;

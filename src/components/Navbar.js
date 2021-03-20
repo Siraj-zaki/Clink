@@ -56,12 +56,12 @@ class Navbar extends React.Component {
                                                 <div style={{ position: 'relative', marginTop: 20 }}>
                                                     <label className="email-label" htmlFor="pass1"><img src={lock} alt="" /></label>
                                                     <label onMouseLeave={() => this.setState({ passShow: false })} onMouseEnter={() => this.setState({ passShow: true })} className="eye-label" htmlFor="emal1"><img src={eye} alt="" /></label>
-                                                    <input className="input-1-new" type={this.state.passShow ? "text" : "password"} name="" id="pass1" placeholder="Password"required />
+                                                    <input className="input-1-new" type={this.state.passShow ? "text" : "password"} name="" id="pass1" placeholder="Password" required />
                                                 </div>
                                                 <div style={{ position: 'relative', marginTop: 20 }}>
                                                     <label className="email-label" htmlFor="pass1"><img src={lock} alt="" /></label>
                                                     {/* <label onMouseLeave={() => this.setState({ passShow1: false })} onMouseEnter={() => this.setState({ passShow: true })} className="eye-label" htmlFor="emal1"><img src={eye} alt="" /></label> */}
-                                                    <input className="input-1-new" type="password" name="" id="pass1" placeholder="Confirm Password"required />
+                                                    <input className="input-1-new" type="password" name="" id="pass1" placeholder="Confirm Password" required />
                                                 </div>
                                                 <div style={{ position: 'relative', marginTop: 20 }}>
                                                     <label className="email-label" htmlFor="pass1"><img src={lock} alt="" /></label>
@@ -80,7 +80,7 @@ class Navbar extends React.Component {
                                                 </div>
                                                 <div className="signup-btns">
                                                     <button className="signupbtn btn-1-new" type="submit">Sign Up</button>
-                                                    <a className="signupbtn btn-2-new" style={{display:'flex',justifyContent:'center',alignItems:'center'}} onClick={() => this.setState({toggler1:1 , toggler2:0 }) } >Login</a>
+                                                    <a className="signupbtn btn-2-new" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} onClick={() => this.setState({ toggler1: 1, toggler2: 0 })} >Login</a>
                                                 </div>
 
                                             </div>
@@ -134,7 +134,7 @@ class Navbar extends React.Component {
                                             </div>
                                             <div className="signup-btns">
                                                 <button className="signupbtn btn-1-new">Login</button>
-                                                <button onClick={() => this.setState({ toggler2: 1,toggler1:0 })} className="signupbtn btn-2-new">Create Profile</button>
+                                                <button onClick={() => this.setState({ toggler2: 1, toggler1: 0 })} className="signupbtn btn-2-new">Create Profile</button>
                                             </div>
 
                                         </div>
@@ -205,8 +205,8 @@ class Navbar extends React.Component {
                         <div className="right-side-nav" style={{ width: this.state.matches ? "100%" : '33%' }}>
                             <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }}>
                                 <Link onClick={() => this.setState({ toggler1: 1 })} className="btn-nav" > Sign in / Sign up</Link>
-                                <div className="icons-nav">
-                                    <i  >
+                                <div className="icons-nav"  >
+                                    <i onClick={() => window.location.href = "/CartPage"}  >
                                         <svg className="icon-nav" xmlns="http://www.w3.org/2000/svg" width="30.393" height="33.804" viewBox="0 0 30.393 33.804">
                                             <path id="Path_30" data-name="Path 30" d="M33.888,23.947a5.065,5.065,0,0,0-3.208-4.693L33.838,7.436A1.618,1.618,0,0,0,32.2,5.376H9.071L8.514,3.249A1.688,1.688,0,0,0,6.876,2H3.5V5.376H5.577L9.763,21.01a1.688,1.688,0,0,0,1.688,1.249H28.824a1.688,1.688,0,0,1,0,3.376H6.876a1.688,1.688,0,1,0,0,3.376H8.869a5.065,5.065,0,1,0,9.522,0h3.984A5.065,5.065,0,1,0,32.2,30.7a4.963,4.963,0,0,0-.675-2.482A5.065,5.065,0,0,0,33.888,23.947Zm-6.6-5.065h-14.5L9.983,8.753H30.005ZM13.629,32.388A1.688,1.688,0,1,1,15.318,30.7,1.688,1.688,0,0,1,13.629,32.388Zm13.506,0A1.688,1.688,0,1,1,28.824,30.7,1.688,1.688,0,0,1,27.135,32.388Z" transform="translate(-3.5 -2)" fill="#a10948" />
                                         </svg>
