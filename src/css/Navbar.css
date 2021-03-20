@@ -20,7 +20,7 @@
 
 .signup-heading {
     font-family: Montserrat;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 3.5rem;
     letter-spacing: 0.03em;
     /* line-height: 20px; */
@@ -30,7 +30,7 @@
 
 .signup-p {
     font-family: Montserrat;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 1.4rem;
     text-align: left;
     color: #a5a5a5;
@@ -47,7 +47,7 @@
     padding-left: 15%;
     padding-right: 15%;
     font-family: Montserrat;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 16px;
     text-align: left;
     color: #d2d2d2;
@@ -77,7 +77,7 @@
     border-radius: 5px;
     background: #a10948;
     font-family: Montserrat;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 15px;
     margin-top: 3rem;
     text-align: center;
@@ -93,7 +93,7 @@
 
 .new-span {
     font-family: Montserrat;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 15px;
     text-align: left;
     color: #d2d2d2;
@@ -213,7 +213,7 @@
 
 .menu-li {
     font-family: Montserrat;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 3.5rem;
     text-align: left;
     color: #f7f6f1;
@@ -223,7 +223,7 @@
 
 .menu-heading {
     font-family: Montserrat;
-    font-weight: bold;
+    font-weight: normal;
     margin-top: 2rem;
     font-size: 16px;
     text-align: left;

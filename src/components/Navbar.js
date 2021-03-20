@@ -25,13 +25,15 @@ class Navbar extends React.Component {
         passShow1: false
 
     };
+
     componentDidMount() {
         const handler = e => this.setState({ matches: e.matches });
         window.matchMedia("(max-width: 768px)").addListener(handler);
     }
 
     render() {
-        console.log(this.state);
+        console.log(document.body.style.position);
+
         return (
             <>
                 <>

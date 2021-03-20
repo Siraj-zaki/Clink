@@ -22,7 +22,7 @@
 
 .li {
     font-family: Montserrat;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 14px;
     letter-spacing: 0.08em;
     text-align: left;
@@ -75,7 +75,7 @@
     font-size: 15px;
     /* line-height: 27px; */
     text-align: left;
-    font-weight: bold;
+    font-weight: normal;
     color: #1c304c;
     padding: 20px;
     width: 100%

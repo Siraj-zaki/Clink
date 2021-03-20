@@ -29,7 +29,7 @@
 
 .blog-heading {
     font-family: Montserrat;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 2.4rem;
     letter-spacing: -0.03em;
     /* line-height: 38px; */
@@ -43,7 +43,7 @@
     /* width: 417.15px;
 height: 110.91px; */
     font-family: Montserrat;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 1.7rem;
     letter-spacing: -0.03em;
     /* line-height: 24px; */
@@ -59,7 +59,7 @@ height: 110.91px; */
     border: 2px solid var(--maincolor);
     opacity: 0.92;
     font-family: Montserrat;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -74,7 +74,7 @@ height: 110.91px; */
     background: #233d3a;
     margin-top: 8rem;
     font-family: Montserrat;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 15px;
     letter-spacing: 0.06em;
     /* line-height: 15px; */

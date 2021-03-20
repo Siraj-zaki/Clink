@@ -49,8 +49,8 @@
 }
 
 .section-left-side-h1 {
-    font-family: monseratbold;
-    font-size: 6.5rem;
+    font-family: Montserrat;
+    font-size: 5rem;
     text-align: left;
     color: #233d3a;
 }
@@ -62,7 +62,7 @@
 
 .section-left-side-p {
     font-family: Montserrat;
-    font-weight: 900;
+    font-weight: normal;
     font-size: 17px;
     text-align: left;
     color: #233d3a;
