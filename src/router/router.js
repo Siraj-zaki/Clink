@@ -15,9 +15,9 @@ class ReactRouter extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <Route exact path="/" component={Home} />
         <Route path="/Home" component={Home} />
         <Route path="/CartPage" component={CartPage} />
-        <Route exact path="/" component={Home} />
         <Route path="/BlogPage" component={BlogPage} />
         <Route path="/AboutUs" component={AboutUs} />
         <Route path="/BlogDetail" component={BlogDetail} />
