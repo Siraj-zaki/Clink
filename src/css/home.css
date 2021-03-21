@@ -44,7 +44,10 @@
 }
 
 .right-side {
+
+    /* min-height: 73rem; */
     width: 60%;
+
     /* padding: 10px; */
 }
 

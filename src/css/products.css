@@ -591,3 +591,9 @@ height: 734px; */
     text-align: left;
     color: #233d3a;
 }
+
+#root>div>div.products.new-padding.new-class-product>div.slider-div>div:nth-child(2)>div>div.swiper-wrapper>div.swiper-slide.swiper-slide-active>div>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

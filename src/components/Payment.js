@@ -1,28 +1,26 @@
 import '../css/home.css';
 import React from 'react'
-import Slider from "react-slick";
-// import cart from '../assets/cart.png'
 import left from '../assets/leftarrow.png'
-import smallcross from '../assets/smallcross.png'
 import right from '../assets/rightarrow.png'
 import cartimg from '../assets/cartimg.png'
 import cart from '../assets/cart.png'
-import '../css/products.css'
-import SwiperCore, { Navigation } from 'swiper';
+import "../css/devilvery.css"
+
 import Navbar from './Navbar'
 import { motion } from "framer-motion"
 import SelectedItem from './SelectedItem'
-import 'swiper/swiper.scss';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import CartProduct from '../components/CartProduct'
+
+
 import Footer from './Footer';
-class AddingToCart extends React.Component {
+class Devilvery extends React.Component {
     state = {
         hearttoggler: false,
         counter: 0,
+        toggler: 0,
     }
     render() {
-        SwiperCore.use([Navigation]);
+        console.log(this.state);
+
         const svganimation = {
             hidden: {
                 opacity: 0
@@ -101,6 +99,39 @@ class AddingToCart extends React.Component {
                 r: 11,
             }
         }
+        const svgbox3 = {
+            hidden: {
+                opacity: 0,
+                r: 0
+            },
+            visible: {
+                opacity: 1,
+                transition: { duration: 1, delay: 2, type: "spring", stiffness: 200 },
+                r: 11,
+            }
+        }
+        const svgbox4 = {
+            hidden: {
+                opacity: 0,
+                r: 0
+            },
+            visible: {
+                opacity: 1,
+                transition: { duration: 1, delay: 2, type: "spring", stiffness: 200 },
+                r: 7,
+            }
+        }
+        const svgbox5 = {
+            hidden: {
+                opacity: 0,
+                r: 0
+            },
+            visible: {
+                opacity: 1,
+                transition: { duration: 1, delay: 1, type: "spring", stiffness: 200 },
+                r: 7,
+            }
+        }
         function SamplePrevArrow(props) {
             const { className, style, onClick } = props;
             return (
@@ -164,87 +195,81 @@ class AddingToCart extends React.Component {
                 <Navbar />
                 <div style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: 40 }} >
                     <div style={{ width: "50%", height: 75, display: 'flex', justifyContent: 'center', alignItems: 'center', alignSelf: 'center' }}>
-
-                        <motion.svg xmlns="http://www.w3.org/2000/svg" width="525" height="73" viewBox="0 0 525 63"
+                        <motion.svg
                             variants={svganimation}
                             initial="hidden"
-                            animate="visible"
-                        >
-                            <g id="Group_6244" data-name="Group 6244" transform="translate(-706 -159)">
+                            animate="visible" xmlns="http://www.w3.org/2000/svg" width="525" height="73" viewBox="0 0 525 63">
+                            <g id="Group_6251" data-name="Group 6251" transform="translate(-706 -159)">
                                 <motion.text variants={svgfont1} id="Order" transform="translate(706 217)" fill="#233d3a" font-size="20" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Order</tspan></motion.text>
                                 <motion.text variants={svgfont2} id="Delivery" transform="translate(920 217)" fill="#233d3a" font-size="20" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Delivery</tspan></motion.text>
                                 <motion.text variants={svgfont3} id="Payment" transform="translate(1139 217)" fill="#233d3a" font-size="20" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Payment</tspan></motion.text>
-                                <g id="Group_6238" data-name="Group 6238">
-                                    <circle id="Ellipse_13" data-name="Ellipse 13" cx="11" cy="11" r="11" transform="translate(724 159)" fill="#a10948" />
-                                    <g id="Group_6237" data-name="Group 6237">
+                                <g id="Group_6250" data-name="Group 6250">
+                                    <motion.circle variants={svgbox3} id="Ellipse_13" data-name="Ellipse 13" cx="11" cy="11" r="11" transform="translate(724 159)" fill="#a10948" ></motion.circle>
+                                    <g id="Group_6249" data-name="Group 6249">
                                         <motion.line id="Line_8" data-name="Line 8" x1="432" transform="translate(742 170)  " fill="none" stroke="#a10948" stroke-width="2"
                                             variants={svgline}
                                         ></motion.line>
-                                        <motion.circle
-                                            variants={svgbox2}
-                                            id="Ellipse_14" data-name="Ellipse 14" cx="11" cy="11" r="15" transform="translate(949 159)" fill="#a10948" ></motion.circle>
-                                        <motion.circle
-                                            variants={svgbox1}
-                                            id="Ellipse_15" data-name="Ellipse 15" cx="11" cy="11" r="15" transform="translate(1174 159)" fill="#a10948" ></motion.circle>
-                                        <circle id="Ellipse_16" data-name="Ellipse 16" cx="7" cy="7" r="7" transform="translate(728 163)" fill="#fff" />
+                                        <motion.circle variants={svgbox2} id="Ellipse_14" data-name="Ellipse 14" cx="11" cy="11" r="15" transform="translate(949 159)" fill="#a10948" ></motion.circle>
+                                        <motion.circle variants={svgbox1} id="Ellipse_15" data-name="Ellipse 15" cx="11" cy="11" r="15" transform="translate(1174 159)" fill="#a10948" ></motion.circle>
+                                        <motion.circle variants={svgbox4} id="Ellipse_16" data-name="Ellipse 16" cx="7" cy="7" r="7" transform="translate(728 163)" fill="#fff" ></motion.circle>
+                                        <motion.circle variants={svgbox5} id="Ellipse_17" data-name="Ellipse 17" cx="7" cy="7" r="7" transform="translate(953 163)" fill="#fff" ></motion.circle>
+                                        <motion.circle id="Ellipse_18" data-name="Ellipse 18" cx="7" cy="7" r="7" transform="translate(1178 163)" fill="#fff" ></motion.circle>
                                     </g>
                                 </g>
                             </g>
                         </motion.svg>
-
                     </div>
                 </div>
 
 
                 <div className="products new-padding new-class-product" style={{ justifyContent: 'space-between', alignItems: 'flex-start', flexDirection: 'row' }} >
-                    {/* <div className="cart-left-side " style={{ width: '40rem', zIndex: 40 }} >
-                        <div className="w-100 mt-5 slider-div ">
+                    <div style={{ display: "flex", justifyContent: 'center', alignItems: "center", flexDirection: 'column', position: 'relative' }} >
+                        <div className="slider-div-1" animation={this.state.toggler} style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', flexDirection: 'column', width: "56rem", minWidth: '320px', marginBottom: 30 }} >
                             <div style={{ margin: 30 }} >
-                                <span className="slider-heading" >Products you may like</span>
+                                <span className="slider-heading" style={{ fontWeight: 400 }} >Delivery Information</span>
                             </div>
-                            <Slider {...settings}>
-                                {
-                                    Array(10).fill().map((item, index) =>
-                                        <div>
-                                            <CartProduct />
+                            <div className="left-side-form">
+                                <div className="form-selected-option">
+                                    <div className="form-selected-option mt-5">
+                                        <input type="text" placeholder="City" className="adresses-input" style={{ width: '50rem' }} />
+                                    </div>
+                                    <div className="form-selected-option mt-5">
+                                        <input type="text" placeholder="City" className="adresses-input" style={{ width: '50rem' }} />
+                                    </div>
+                                    <div className="form-selected-option mt-5" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', flexDirection: 'row', flexWrap: 'wrap' }}>
+                                        <input type="text" placeholder="City" className="adresses-input  " style={{ width: 'auto', minWidth: 'auto' }} />
+                                        <input type="text" placeholder="City" className="adresses-input " style={{ width: 'auto', minWidth: 'auto' }} />
+                                    </div>
+                                    <div className="form-selected-option mt-5" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', flexDirection: 'row', flexWrap: 'wrap' }}>
+                                        <input type="text" placeholder="City" className="adresses-input  " style={{ width: 'auto', minWidth: 'auto' }} />
+                                        <div style={{ width: 'auto', minWidth: 'auto' }} >
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="172.2" height="76" viewBox="0 0 172.2 76">
+                                                <g id="Group_6254" data-name="Group 6254" transform="translate(-636.8 -692)">
+                                                    <text id="Card_Number" data-name="Card Number" transform="translate(685 747)" fill="#a2a2a2" font-size="18" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Card Number</tspan></text>
+                                                    <g id="Group_5348" data-name="Group 5348" transform="translate(604.8 596)">
+                                                        <path id="Path_3536" data-name="Path 3536" d="M131.75,96H38.65A6.654,6.654,0,0,0,32,102.65v62.7A6.67,6.67,0,0,0,38.65,172h93.1a6.67,6.67,0,0,0,6.65-6.721V102.721A6.67,6.67,0,0,0,131.75,96Zm-89.039,7.6h84.954a3.157,3.157,0,0,1,3.111,2.85v4.75H39.6v-4.821A3.131,3.131,0,0,1,42.711,103.6Zm84.977,60.8H42.711a3.114,3.114,0,0,1-3.111-2.779V134h91.2v27.55A3.175,3.175,0,0,1,127.689,164.4Z" fill="#233d3a" />
+                                                        <path id="Path_3537" data-name="Path 3537" d="M96,304h45.6v3.8H96Z" transform="translate(-48.8 -158.6)" fill="#233d3a" />
+                                                        <path id="Path_3538" data-name="Path 3538" d="M96,336h22.8v3.8H96Z" transform="translate(-48.8 -183)" fill="#233d3a" />
+                                                        <path id="Path_3539" data-name="Path 3539" d="M352,304h15.2v11.4H352Z" transform="translate(-244 -158.6)" fill="#233d3a" />
+                                                    </g>
+                                                </g>
+                                            </svg>
                                         </div>
-                                    )
-                                }
-                            </Slider>
-                            <button className="li-size  addtocart " style={{ minHeight: 70, border: 'none', width: 270 }} >Add to Cart</button>
-                            <button className="li-size  addtocart " style={{ backgroundColor: 'transparent', minHeight: 70, border: '1px solid  #a10948 ', color: '#a10948', width: 270, marginTop: 160 }} >Explore More</button>
-                        </div>
-                    </div> */}
-                    <div className="slider-div" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', width: "400px" }} >
-                        <div style={{ margin: 30 }} >
-                            <span className="slider-heading" >Products you may like</span>
-                        </div>
-                        <div style={{ width: 272, paddingBottom: 20, display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }} >
-                            <Swiper
-                                spaceBetween={10}
-                                navigation
-                                pagination
-                                slidesPerView={1}
-                                onSlideChange={() => console.log('slide change')}
-                                onSwiper={(swiper) => console.log(swiper)}
-                            >
-                                {
-                                    Array(10).fill().map((item, index) =>
-
-                                        <SwiperSlide>
-                                            <div >
-                                                <CartProduct newwidth newheight />
+                                        <div className="form-selected-option mt-5" style={{ width: '100%' }}>
+                                            <textarea style={{ height: 200, paddingTop: 10, paddingRight: 30, width: '100%' }} type="text" placeholder="Order Note or message (If any)" className="adresses-input" ></textarea>
+                                        </div>
+                                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', flexDirection: 'column', width: '100%' }}>
+                                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: 20 }}>
+                                                <input className="checking m-1" type="checkbox" required name="" id="" /><label htmlFor="checking" className="remember-heading m-1">I agree <label htmlFor="checking" className="remember-heading m-1" style={{ color: "#a10948" }}>that, I am 21 above</label> </label>
                                             </div>
-                                        </SwiperSlide>
-
-                                    )
-                                }
-
-
-                            </Swiper>
+                                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: 20 }}>
+                                                <input className="checking m-1" type="checkbox" required name="" id="" /><label htmlFor="checking" className="remember-heading m-1">I agree <label htmlFor="checking" className="remember-heading m-1" style={{ color: "#a10948" }}> terms & conditions and Privacy policy</label> </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <button className="li-size  addtocart " style={{ minHeight: 70, border: 'none', width: 270 }} >Add to Cart</button>
-                        <button className="li-size  addtocart " style={{ backgroundColor: 'transparent', minHeight: 70, border: '1px solid  #a10948 ', color: '#a10948', width: 270, marginTop: 40, }} >Explore More</button>
                     </div>
                     <div className="cart-right-side" style={{ zIndex: 1, width: '100%', paddingLeft: '4rem' }}>
                         <div className="selected-items-div">
@@ -277,23 +302,14 @@ class AddingToCart extends React.Component {
                                     </div>
                                 </div>
                             </div>
-
-
-                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', flexDirection: 'row', flexWrap: 'wrap' }}>
-                                <span className="go-back" onClick={() => window.location.href = "./AddingToCart"} style={{ fontSize: '18px' }} >Go Back</span>
-                                <button onClick={() => window.location.href = "/Devilvery"} className="li-size  addtocart " style={{ minHeight: 70, border: 'none', width: 270, margin: '6rem' }} >Proceed to Delivery </button>
-                                <span className="remove-all" >Remove all </span>
-                            </div>
                         </div>
                     </div>
 
-
-
-
-
-
                 </div>
-
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', flexDirection: 'row', flexWrap: 'wrap' }}>
+                    <span className="go-back" onClick={() => window.location.href = "/Devilvery"} style={{ fontSize: '18px' }} >Go Back</span>
+                    <button className="li-size  addtocart " style={{ minHeight: 70, border: 'none', width: 270, margin: '6rem' }} onClick={() => window.location.href = "/Finished"} >Make Payment </button>
+                </div>
                 <Footer />
 
             </div >
@@ -302,4 +318,4 @@ class AddingToCart extends React.Component {
     }
 
 };
-export default AddingToCart;
+export default Devilvery;

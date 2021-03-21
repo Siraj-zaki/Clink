@@ -7,6 +7,9 @@ import BlogDetail from '../components/BlogDetail'
 import Products from '../components/Products'
 import CartPage from '../components/CartPage'
 import AddingToCart from '../components/AddingToCart'
+import Payment from '../components/Payment'
+import Devilvery from '../components/Devilvery'
+import Finished from '../components/Finished'
 
 class ReactRouter extends React.Component {
   render() {
@@ -20,6 +23,9 @@ class ReactRouter extends React.Component {
         <Route path="/BlogDetail" component={BlogDetail} />
         <Route path="/Products" component={Products} />
         <Route path="/AddingToCart" component={AddingToCart} />
+        <Route path="/Payment" component={Payment} />
+        <Route path="/Devilvery" component={Devilvery} />
+        <Route path="/Finished" component={Finished} />
       </React.Fragment>
     );
   }

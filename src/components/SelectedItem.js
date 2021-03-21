@@ -1,6 +1,5 @@
 import React from 'react'
-import cart from '../assets/cart.png'
-import cartimg from '../assets/cartimg.png'
+
 import smallcross from '../assets/smallcross.png'
 import '../css/selecteditem.css'
 class SelectedItem extends React.Component {
@@ -16,15 +15,15 @@ class SelectedItem extends React.Component {
                         <span className="div-right-side-heading m-2" style={{ fontSize: '20px' }} >{this.props.heading}</span>
                         <span className="div-right-side-small-heading m-2" style={{ textAlign: 'left' }} >{this.props.headingsmall}</span>
                         <div className="m-2" style={{ display: "flex", justifyContent: 'space-between', alignItems: 'center', width: '100%' }} >
-                            <span className="li-size" >{this.props.size}</span>
-                            <span className="li-size" >Price {this.props.price}</span>
+                            <span className="li-size" style={{ display: 'flex', justifyContent: "center", alignItems: "center", width: '100%', borderRight:'1px solid black' }} >{this.props.size}</span>
+                            <span className="li-size" style={{ display: 'flex', justifyContent: "center", alignItems: "center", width: '100%'  }} >Price {this.props.price}</span>
                         </div>
                     </div>
                 </div>
                 <div className="cart-right-side">
                     <img src={smallcross} alt="" />
                 </div>
-                
+
 
 
             </div>

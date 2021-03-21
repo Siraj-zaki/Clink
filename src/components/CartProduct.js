@@ -24,7 +24,7 @@ class CartProduct extends React.Component {
             <div>
                 {
                     this.state.cartproduct.map((cart, index) =>
-                        <div className="add-products" onClick={() => window.location.href = "/AddingToCart"} style={{ position: 'relative' }} key={index} >
+                        <div className="add-products" onClick={() => window.location.href = "/AddingToCart"} style={{ position: 'relative', minHeight: this.props.newheight ? 310 : "", width: this.props.newwidth ? 214 : "" }} key={index} >
                             <div className="heart-main" onClick={() => this.setState({ hearttoggler: !this.state.hearttoggler })}>
                                 <img className="heart-div" src={this.state.hearttoggler === true ? heartfill : heart} alt="" />
                             </div>

@@ -195,8 +195,8 @@
 
 .menu {
     position: fixed;
-    height: 71rem;
-    width: 56.5%;
+    height: 100%;
+    width: 56.6%;
     right: 0;
     background-color: #233d3a;
     background-image: url('../assets/menuimg.png');
